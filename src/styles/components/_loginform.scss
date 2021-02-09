@@ -1,0 +1,114 @@
+.loginform{
+    display: flex;
+    flex-direction: column;
+    width:480px;
+    min-height:700px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 20px grey;
+    // animation-name:originate;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    // opacity:0;
+    @media (max-width:480px){
+        width:95%;
+        padding-bottom: 100px;
+    }
+}
+input{
+    margin:20px;
+    width:80%;
+    height:30px;
+    padding:5px;
+    
+}
+
+input:focus{
+    outline: 3px solid $theme-color;
+}
+img{
+    width:100px;
+    height:100px;
+}
+.img{
+    margin-bottom: 20px;
+}
+.loginform__title{
+    width:100%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: $theme-color;
+}
+
+.button{
+    width:80%;
+    background-color: white;
+    color:$theme-color;
+    height:30px;
+    border:3px solid $theme-color;
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 900;
+    box-sizing: content-box;
+}
+.button--container{
+    margin-top:40px;
+    width:100%;
+}
+
+.button:hover{
+    color:white;
+    border:none;
+    background-color: $theme-color;
+    border:3px solid $theme-color;
+    color:white;
+    font-weight: 300;
+}
+
+.login__message{
+    display: block;
+    background-color: $theme-color;
+    width:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    padding:30px;
+    font-size: 20px;
+}
+.login__message__title{
+    font-weight: 900;
+}
+.login__message__title--top{
+margin-bottom:5px;
+}
+.login__message--err{
+    background-color: rgba(233,0,0,0.75);
+}
+.login__message--success{
+    background-color: rgba(0, 177, 106, 0.8);
+}
+
+// @keyframes originate {
+//     0%{
+//         width:0px;
+//         min-height:0px;
+//     }
+//     50%{
+//         width:480px;
+//         min-height:700px;
+//         opacity: 0;
+//         }
+//     100%{
+//         opacity:1
+//     }
+// }

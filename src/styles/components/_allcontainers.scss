@@ -1,0 +1,42 @@
+.allcontainers{
+    // animation-name:stretchport;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    box-shadow: 0px 0px 20px grey;
+    display: flex;
+    width:95%;
+    padding-top:20px;
+    min-height:900px;
+    @media (max-width:480px) {
+        flex-direction: column; 
+        width:90%;
+    }
+
+}
+.allcontainertab{
+    width:50%;
+    @media (max-width:480px) {
+        width:100%;
+    }
+    
+}
+.maptab{
+    width:50%;
+    display: flex;
+    min-height:300px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:480px) {
+        width:100%;
+    }
+}
+// @keyframes stretchport{
+//     from{
+//         width:480px;
+//         min-height:700px
+//     }
+//     to{
+//         width:95%;
+//         min-height:900px;
+//     }
+// }

@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    width:100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height:8vh;
+    background-color: $background;
+    margin-bottom: 2vh;
+    
+}
+
+.logo{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.title{
+    font-size:60px;
+    font-weight: 700;
+    @media (max-width:480px) {
+        font-size:40px; 
+    }
+
+}
+.title__port{
+    color:$theme-color;
+}
